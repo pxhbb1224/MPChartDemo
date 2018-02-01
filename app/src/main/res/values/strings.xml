@@ -1,3 +1,8 @@
 <resources>
   <string name="app_name">MPChartDemo</string>
+  <string name="btn_text_test_control">test_control</string>
+  <string name="btn_text_next_step">next</string>
+  <string name="check_box_text_test">true</string>
+  <string name="check_box_text_left_y">left-y</string>
+  <string name="check_box_text_right_y">right-y</string>
 </resources>

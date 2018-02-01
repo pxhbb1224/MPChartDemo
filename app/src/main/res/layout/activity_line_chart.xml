@@ -13,5 +13,65 @@
       app:layout_constraintRight_toRightOf="parent"
       app:layout_constraintTop_toTopOf="parent"
       app:layout_constraintBottom_toBottomOf="parent"
+      android:layout_marginBottom="100dp"
+      />
+
+  <Button
+      android:id="@+id/btn_test_control"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="@string/btn_text_test_control"
+      app:layout_constraintTop_toBottomOf="@id/line_chart_simple"
+      app:layout_constraintLeft_toLeftOf="parent"
+      />
+
+  <CheckBox
+      android:id="@+id/checkbox_enable"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      app:layout_constraintLeft_toRightOf="@id/btn_test_control"
+      app:layout_constraintTop_toBottomOf="@id/line_chart_simple"
+      app:layout_constraintBaseline_toBaselineOf="@id/btn_test_control"
+      android:text="@string/check_box_text_test"
+      android:padding="10dp"
+      />
+
+  <CheckBox
+      android:id="@+id/checkbox_left_y"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      app:layout_constraintLeft_toRightOf="@id/checkbox_enable"
+      app:layout_constraintTop_toBottomOf="@id/line_chart_simple"
+      app:layout_constraintBaseline_toBaselineOf="@id/btn_test_control"
+      android:text="@string/check_box_text_left_y"
+      android:padding="10dp"
+      />
+
+  <CheckBox
+      android:id="@+id/checkbox_right_y"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      app:layout_constraintLeft_toRightOf="@id/checkbox_left_y"
+      app:layout_constraintTop_toBottomOf="@id/line_chart_simple"
+      app:layout_constraintBaseline_toBaselineOf="@id/btn_test_control"
+      android:text="@string/check_box_text_right_y"
+      android:padding="10dp"
+      />
+
+  <Button
+      android:id="@+id/btn_next_step"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      app:layout_constraintTop_toBottomOf="@id/btn_test_control"
+      android:text="@string/btn_text_next_step"
+      />
+
+  <Button
+      android:id="@+id/btn_add_limit_line"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      app:layout_constraintBaseline_toBaselineOf="@id/btn_next_step"
+      app:layout_constraintLeft_toRightOf="@id/btn_next_step"
+      android:text="addLimit"
       />
 </android.support.constraint.ConstraintLayout>
